@@ -9,6 +9,7 @@ src/lin2d_notebook/
 src/lorenz_notebook/
 src/lin2d_exp/
 src/lorenz_exp/
+*.zip
 
 # OS
 .DS_Store
