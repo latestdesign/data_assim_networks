@@ -17,4 +17,5 @@ Thumbs.db
 
 # Course PDFs and report
 *.pdf
-report/
+report/*
+!report/*.pdf
