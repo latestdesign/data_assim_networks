@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Training outputs
+src/lin2d_notebook/
+src/lorenz_notebook/
+src/lin2d_exp/
+src/lorenz_exp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Course PDFs and report
+*.pdf
+report/
