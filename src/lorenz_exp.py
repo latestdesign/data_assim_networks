@@ -54,7 +54,7 @@ k["prop_kwargs"] = {
         "x_dim": x_dim,
         "N": 1,
         "dt": .05,
-        "init": "95"},
+        "init": "96"},
     "gauss_dim": x_dim,
     "scale_vec_classname": "Cst",
     "scale_vec_kwargs": {"init": torch.log(torch.tensor([sigmap]))}}

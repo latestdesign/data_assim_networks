@@ -193,9 +193,9 @@ def train_online(net, b_size, h_dim, x_dim,
 
     for t in range(1, T+1):
         # TODO bonus
-        # On the fly data generation, a single point for each t
-        x = prop(x).sample(sample_shape=torch.Size([1])).squeeze(0)
-        y = obs(x).sample(sample_shape=torch.Size([1])).squeeze(0)
+        # On the fly data generation
+        x = prop(x).sample()
+        y = obs(x).sample()
 
         # Compute loss and update parameters
         optimizer.zero_grad()

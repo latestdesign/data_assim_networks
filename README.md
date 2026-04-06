@@ -4,7 +4,7 @@ Implementation of Data Assimilation Networks for state estimation in observed dy
 
 ## Experiments
 
-- **Linear 2D** — Periodic (Hamiltonian) dynamics, full-horizon training with L-BFGS
+- **Linear 2D** — Periodic linear dynamics, fixed horizon training with L-BFGS
 - **Lorenz 96 (40D)** — Chaotic dynamics, online training with Adam + truncated BPTT
 
 ## Usage
@@ -22,6 +22,14 @@ python main.py -save lorenz_exp.py [-run | -plot]
 
 Set `RETRAIN = False` in the notebook to load pre-trained checkpoints.
 If checkpoints are not present locally, set `RETRAIN = True` to train from scratch.
+
+## Environment
+```bash
+conda env create -f environment.yml -p .venv
+conda activate ./.venv
+```
+
+Or use your own Python environment with PyTorch installed.
 
 ## Files
 

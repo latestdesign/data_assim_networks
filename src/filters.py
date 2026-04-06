@@ -112,8 +112,8 @@ class EDO(nn.Module):
         self.x_dim = x_dim
         self.N = N
         self.dt = dt
-        if init == "95":
-            """ Lorenz95 (96) initialization
+        if init == "96":
+            """ Lorenz96 initialization
             """
             self.window = (-2, -1, 0, 1)
             self.diameter = 4

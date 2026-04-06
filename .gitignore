@@ -3,10 +3,15 @@ __pycache__/
 *.pyc
 *.pyo
 .ipynb_checkpoints/
+.venv/
 
 # Training outputs
-src/lin2d_notebook/
-src/lorenz_notebook/
+src/*_notebook/net.pt
+src/*_notebook/ha.pt
+src/*_notebook/x.pt
+src/*_notebook/optimizer.pt
+src/*_notebook/optimizer.txt
+src/*_notebook/net_final.pt
 src/lin2d_exp/
 src/lorenz_exp/
 *.zip
