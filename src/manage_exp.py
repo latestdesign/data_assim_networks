@@ -11,7 +11,7 @@ def get_x0(b_size, x_dim, sigma):
     """Generate x0 ~ N(3, sigma^2) of shape (batch size, dim of x).
     If _x0 was already generated, return the same _x0, otherwise generate a new one and save it in _x0."""
     global _x0
-    if _x0 is None:
+    if _x0 is None or _x0.shape[0] != b_size or _x0.shape[1] != x_dim:
         _x0 = 3*torch.ones(b_size, x_dim)\
              + sigma * torch.randn(b_size, x_dim)
     x0 = _x0
@@ -28,7 +28,7 @@ def get_ha0(b_size, h_dim):
     """Generate ha0 of shape (batch size, dim of h).
     Default ha0 is a zero vector of shape (1, dim of h) for all samples in the batch, but it can be changed by having the variable _v0 set beforehand."""
     global _v0
-    if _v0 is None:
+    if _v0 is None or _v0.shape[1] != h_dim:
         _v0 = torch.zeros(1,h_dim)
     ha0 = torch.zeros(b_size, h_dim)
     for b in range(b_size):
