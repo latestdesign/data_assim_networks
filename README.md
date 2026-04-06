@@ -4,7 +4,7 @@ Implementation of Data Assimilation Networks for state estimation in observed dy
 
 ## Experiments
 
-- **Linear 2D** — Periodic linear dynamics, fixed horizon training with L-BFGS
+- **Linear 2D** — Periodic linear dynamics, fixed horizon training with L-BFGS + BPTT
 - **Lorenz 96 (40D)** — Chaotic dynamics, online training with Adam + truncated BPTT
 
 ## Usage
